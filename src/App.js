@@ -1,12 +1,13 @@
 import './css/app.css';
-import Counter from "./components/examples/Counter";
+import Home from "./components/Home";
 
 
 function App() {
   return (
     <div className="App">
     
-        <Counter/> 
+        <Home/>
+
 
       </div>
 

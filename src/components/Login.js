@@ -1,27 +1,27 @@
-const login = () => {
-    return(
-   <>
-   <div class="signup-form-wrapper modal">
-          <div class="x-btn signup-x">
-            &times;
-          </div>
-          <div class="form-header">
-            <h1>Welcome</h1>
-            <h3>Login</h3>
-          </div>
-          <form class="form">
-            <div class="input-group">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" /> {/* I am at the point of no return */}
-            </div>
-            <div class="input-group">
-              <i class="fas fa-key"></i>
-              <input type="password" placeholder="Password" />
-            </div>
-            <button type="button">Login</button>
-          </form>
+import React from "react";
+const Login = ({closeModal}) => {
+
+  return (
+      <div className="modal">
+        <div className="x-btn login-x" onClick={() => closeModal(false)}>
+          &times;
         </div>
-   </>
-   )
+        <div className="form-header">
+          <h1>Welcome</h1>
+          <h3>Login</h3>
+        </div>
+        <form className="form">
+          <div className="input-group">
+            <i className="fas fa-user"></i>
+            <input type="text" placeholder="Username" />
+          </div>
+          <div className="input-group">
+            <i className="fas fa-key"></i>
+            <input type="password" placeholder="Password" />
+          </div>
+          <button type="button">Login</button>
+        </form>
+      </div>
+  )
 }
-export default login;
+export default Login;
