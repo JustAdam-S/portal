@@ -1,65 +1,15 @@
-//import './css/app.css';
-//import Login from './components/Login';
-//import Register from './components/Register';
-
-//const signupModal = document.querySelector(".signup-form-wrapper");
-//const loginModal = document.querySelector(".login-form-wrapper");
-//const signupBtn = document.querySelector(".signup-btn");
-//const loginBtn = document.querySelector(".login-btn");
-//const signupX = document.querySelector(".signup-x");
-//const loginX = document.querySelector(".login-x");
-//const formContainer = document.querySelector(".form-container");
-
-//signupBtn.addEventListener("click", () => {
-//  signupModal.classList.add("display");
-//  formContainer.classList.add("disable");
-//});
-
-//loginBtn.addEventListener("click", () => {
-//  loginModal.classList.add("display");
-//  formContainer.classList.add("disable");
-//});
-
-//signupX.addEventListener("click", () => {
-//  signupModal.classList.remove("display");
-//  formContainer.classList.remove("disable");
-//});
-
-//loginX.addEventListener("click", () => {
-//  loginModal.classList.remove("display");
-//  formContainer.classList.remove("disable");
-//});
+import './css/app.css';
+import Counter from "./components/examples/Counter";
 
 
 function App() {
   return (
     <div className="App">
-      return ()
-    <div className="App">
-      <div class="container">
-      <div class="banner-text">
-        <h1>WELCOME TO CLYDE CHILDRENS HOSPITAL</h1>
-        <p>LOGIN OR REGISTER TO ENTER THE HOSPITAL PORTAL</p>
-      </div>
-      <div class="btns">
-        <button class="btn login-btn">Login</button>
-        <button class="btn signup-btn">Register</button>
-      </div>
-      <div class="form-container">
-
-        {/*login register*/}
-        <Login />
-        {/*Signup register*/}
-        <Register/>
+    
+        <Counter/> 
 
       </div>
 
-        
-x
-      </div>
-    </div>
-
-    </div>
   );
 }
 
